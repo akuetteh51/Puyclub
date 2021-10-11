@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Let go Ghana</title>
+	
+	<link href="../static/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body >
+
+  <div class="container">
+    <form action="{{url_for('success')}}" method="POST">
+      <div class="form-control"> 
+        {{form.Name.label}}{{form.Name(size=20)}}
+      </div>
+      <div class="form-control"> 
+        {{form.Registration_No.label}}{{form.Registration_No}}
+      </div>
+      <div class="form-control"> 
+        {{form.level.label}}{{form.level(size=1)}}
+      </div>
+		    <div class="form-control"> 
+          {{form.Email.label}}{{form.Email}}
+		    </div>
+		    
+				  <div class="form-control"> 
+            {{form.MobileMoney.label}}{{form.MobileMoney(size=1)}}
+          
+				<div class="form-control"> {{form.Amount.label}}{{form.Amount(size=4)}}</div>
+				<div class="form-control"> {{form.Contact.label}}{{form.Contact(size=20)}}</div>
+		    
+{{form.submit}}
+    </form>
+  </div>
+
+ 
+
+ </body>
+
+</html>
+    
