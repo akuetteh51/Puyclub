@@ -23,7 +23,8 @@ body{
 .container{
   background-color: rgba(0,0,0, 0.4);
   padding: 20px 40px ;
-  
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
   }
   .Form-control{
 position: relative;
